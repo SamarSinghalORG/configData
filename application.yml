@@ -1,0 +1,8 @@
+# Define the Eureka server that handles service registration
+eureka:
+  instance:
+      hostname: service-discovery
+      port: 8761
+  client:
+    serviceUrl:
+      defaultZone: http://service-discovery.local.pcfdev.io/eureka/	  
